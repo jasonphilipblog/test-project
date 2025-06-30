@@ -3,10 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My First Website</title>
+  <title>My Interactive Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Helllo, world.</h1>
+  <header>
+    <h1>Welcome to My Interactive Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>This is the home section. Click the button below to see a message.</p>
+      <button id="alertBtn">Click me!</button>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Here’s some info about this site.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
